@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de soma ou subtração</title>
+</head>
+
+<body>
+    
+    <h2>{{Texto}}</h2>
+    <form action="/processar" method="POST">
+        <label> Digite o primeiro número: </label>
+        <input type="float" name="primeiro_numero">
+        <br><br>
+        <label>Digite o segundo número: </label>
+        <input type="float" name="segundo_numero">
+        <br><br>
+        <button type="submit">Enviar</button>
+        <br><br>
+        <br><br>
+    </form>
+
+    <form action="/sub" method="POST">
+        <h2>{{texto_sub}}</h2>
+        <label> Digite o primeiro número: </label>
+        <input type="number" name="terceiro_numero">
+        <br><br>
+        <label>Digite o segundo número: </label>
+        <input type="number" name="quarto_numero">
+        <br><br>
+        <button type="submit">Enviar</button>
+        <br><br>
+        <br><br>
+    </form>
+
+    <form action="/verificador_idade" method="POST">
+        <h2>{{texto_idade}}</h2>
+        <label> Qual a sua idade: </label>
+        <input type="number" name="idade">
+        <br><br>
+        <button type="submit">Enviar</button>
+        <br><br>
+        <br><br>
+    </form>
+
+    <form action="/laco" method="POST">
+        <h2>{{texto_laco}}</h2>
+        <input type="text" name="numero_laco">
+        <button type="submit">Clique aqui para contar</button>
+        <br><br>
+        <br><br>    
+    </form>
+
+    <p>{{resultadoForm}}</p>
+    <p>{{resultadoForm2}}</p>
+    <p>{{resultadoForm3}}</p>
+    <p>{{resultadoForm4}}</p>
+</body>
+</html>
